@@ -1,0 +1,273 @@
+.header {
+    background-color: dodgerblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: block;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.header p {
+    font-size: 18px;
+    padding: 15px 5px 15px 5px;
+    margin: 0px;
+}
+
+button {
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 3px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+button a{
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: -2px;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 1px 6px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#table {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 60px;
+    color: black;
+    position: relative;
+    top: 45px;
+}
+
+#table h1 {
+    margin: 10px;
+}
+
+#contacts-table {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    border-top: 1px solid rgb(175, 173, 173);
+    width: 100%;
+}
+
+caption {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold; 
+    padding: 6px 0px;
+}
+
+th {
+    padding: 6px 0px 0px 0px;
+}
+
+.form {
+    width: 450px;
+    border: 1px solid grey;
+    margin-top: 20px;
+   
+}
+form {
+    font-family: Arial, Helvetica, sans-serif;  
+    position: relative;
+    top: 45px;  
+}
+
+legend{
+    background-color: rgb(197, 197, 197);
+    width: 100%;
+    padding: 0px 0px 0px 8px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+label {
+    margin-left: 5%;
+    font-size: 14px; 
+    
+}
+
+input {
+    width: 90%;
+    padding:none;
+    margin: 4px 5% 4px 5%;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60px;
+    justify-content: right;
+}
+
+.form {
+    display: flexbox;
+    width: 40%;
+    justify-content: center;
+
+}
+
+form h3 {
+    background-color: lightslategray;
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 5px;
+}
+
+.formContent {
+    display: flexbox;
+    width: 95%;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+table {
+    counter-reset: rowNumber-1;
+}
+
+table tr {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::after {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+#contacts-table tr > *:nth-child(5) {
+    display: none;
+}
+
+#edit-form {
+    display: none;
+}
+
+#contacts-form {
+    display: none;
+}
+
+#details {
+    display: none;
+}
+
+#details p {
+    display: block;
+}
+
+#numberCol {
+    width: 5%
+}
+
+#nameCol {
+    column-width: 30%
+}
+
+#emailCol {
+    column-width: 30%
+}
+
+#phoneCol {
+    column-width: 20%
+}
+
+#actionCol {
+    column-width: 200px;
+}
+
+#details {
+    width: 450px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    display: flexbox;
+    width: 40%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: 45px;
+
+  /*   display: flexbox;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; */
+}
+
+#details h3 {
+    background-color: lightslategray;
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 5px;
+}
+
+#details p {
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin:15px 5%;
+}
+
+.detailEntry {
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+#details td {
+    display: block;
+
+    padding: 15px 5%;
+    width: 100%;
+    margin: 2px;
+}
+
+.detailsBtn {
+    border: 1.5px solid blue;
+    color: blue;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.editBtn {
+    border: 1.5px solid orange;
+    color: orange;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.deleteBtn {
+    border: 1.5px solid red;
+    color: red;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+#contacts-op-save {
+    color: white;
+    background-color: rgb(23, 160, 23);
+    border: 1px solid rgb(23, 160, 23);
+    border-radius: 3px;
+    padding:  4px 2px;
+}

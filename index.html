@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>IS 445 Project/sokunthearith goy/016225259</title>
+</head>
+
+        <div class="header">
+                <p>Contact Management</p>
+                <button><a href="index.html">Index</a></button>
+                <button onclick="showAdd();hideTable();hideEdit();hideDetails()">New</button>
+            </div>
+        <div id="table">
+        <h1>Contact List</h1>
+        <table id="contacts-table">
+                <th id="numberCol">#</th>
+                <th id="nameCol">Name</th>
+                <th id="emailCol">Email</th>
+                <th id="phoneCol">Phone</th>
+                <th id="idCol">ID</th>
+                <th id=actionCol></th>
+            </tr>
+        </table>
+        </div>
+       
+                <form id="contacts-form" class="form" name="myForm">
+                        <h3>New Contact</h3>
+                        <div class="item text">
+                            <label>Name:</label>
+                            <div class="field"><input type="text" name="name" /></div>
+                        </div>
+                        <div class="item text">
+                            <label>Email:</label>
+                            <div class="field"><input type="text" name="email" /></div>
+                        </div>
+                        <div class="item text">
+                            <label>Phone:</label>
+                            <div class="field"><input type="text" name="phone" /></div>
+                        </div>
+                        <div class="button-wrapper">
+                            <div class="item button button-default">
+                                <div class="field"><input type="submit" id="contacts-op-save" value="Submit" /></div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="id_entry" value="0" />
+                    </form> 
+                   
+                    <form id="edit-form" class="form" name="editForm">
+                        <h3>Contact</h3>
+                        <div class=formContent>
+                        <div class="item text">
+                            <label>Name:</label>
+                            <div class="field"><input type="text" name="name" /></div>
+                        </div>
+                        <div class="item text">
+                            <label>Email:</label>
+                            <div class="field"><input type="text" name="email" /></div>
+                        </div>
+                        <div class="item text">
+                            <label>Phone:</label>
+                            <div class="field"><input type="text" name="phone" /></div>
+                        </div>
+                        <div class="button-wrapper">
+                            <div class="item button button-default">
+                                <div class="field"><input type="submit" id="contacts-op-save" value="Submit" /></div>
+                            </div>
+                        </div>
+                    </div>
+                        <input type="hidden" name="id_entry" value="0" />
+                    </form> 
+            <div id="details">
+                <h3>Contact</h3>
+            </div>
+       
+        <script src="final.js"></script>
+</body>
+</html>
